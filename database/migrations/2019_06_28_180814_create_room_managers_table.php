@@ -15,6 +15,10 @@ class CreateRoomManagersTable extends Migration
     {
         Schema::create('room_managers', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->string('name');
+            $table->integer('room_type_id');
+            $table->integer('room_capacity_id');
+            $table->string('image');
             $table->timestamps();
         });
     }
