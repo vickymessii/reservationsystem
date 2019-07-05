@@ -12,4 +12,12 @@ require('./bootstrap');
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-require('./components/Example');
+// require('./Main');
+import React from 'react';
+import { render } from 'react-dom';
+// import { Router, Route } from 'react-router';
+import { BrowserRouter as Router,Route,Switch, Link } from 'react-router-dom';
+import MainApp from './Main';
+import Login from './pages/Login';
+
+render(<MainApp/>, document.getElementById('example'));
